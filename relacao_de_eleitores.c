@@ -30,9 +30,9 @@ int main(void)
   porcentagem_votos_validos = votos_validos * 100 / total_eleitores;
 
   printf("RELATORIO\n");
-  printf("Porcetagem de votos brancos: %.0f%\n", porcetagem_votos_brancos);
-  printf("Porcetagem de votos nulos: %.0f%\n", porcetagem_votos_nulos);
-  printf("Porcentagem de votos validos: %.0f%\n", porcentagem_votos_validos);
+  printf("Porcetagem de votos brancos: %.0f%%\n", porcetagem_votos_brancos);
+  printf("Porcetagem de votos nulos: %.0f%%\n", porcetagem_votos_nulos);
+  printf("Porcentagem de votos validos: %.0f%%\n", porcentagem_votos_validos);
   printf("Total de eleitores: %i\n", total_eleitores);
 
   return 0;

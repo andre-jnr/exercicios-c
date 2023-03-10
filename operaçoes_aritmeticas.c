@@ -30,7 +30,7 @@ int main()
   raiz_dos_quadrados = (n1 * n1) + (n2 * n2);
   raiz_dos_quadrados = sqrt(raiz_dos_quadrados);
 
-  printf("D) A raiz quadrada da soma dos quadrados: %i", raiz_dos_quadrados);
+  printf("D) A raiz quadrada da soma dos quadrados: %i\n", raiz_dos_quadrados);
 
   printf("E) O seno da diferença do primeiro número pelo segundo: %f\n", sin(n1 - n2));
 

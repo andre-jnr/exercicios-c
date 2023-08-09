@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <locale.h>
 
 /*
   Uma largata sobre 3cm de dia e a noite ela desce 2cm,
@@ -9,6 +10,7 @@
 
 int main()
 {
+  setlocale(LC_ALL, "portuguese");
   int topo_balde = 10, lagarta = 0;
 
   do

@@ -41,7 +41,7 @@ int main()
   printf("\nClassificação dos corredores:\n");
   for (int i = 1; i <= 10; i++)
   {
-    printf("%d 1º lugar - Corredor %d - Tempo: %.2f segundos\n", i, numeroCorredores[i], tempoCorrida[i]);
+    printf("%dº lugar - Corredor %d - Tempo: %.2f segundos\n", i, numeroCorredores[i], tempoCorrida[i]);
   }
 
   return 0;

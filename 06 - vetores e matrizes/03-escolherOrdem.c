@@ -32,23 +32,27 @@ int main()
   {
     printf("\n");
     printf("Digite o que deseja \n");
-    printf("[0] - Ver os números da esquerda para direita \n");
-    printf("[1] - Ver os números da direita para esquerda \n");
-    printf("[Qualquer outro número] - sair \n");
+    printf("[0] - sair \n");
+    printf("[1] - Ver os números na ordem digitada \n");
+    printf("[2] - Ver os números da em ordem invertida \n");
     scanf("%d", &codigo);
 
     switch (codigo)
     {
     case 0:
-      mostrarVetorInvertido(vetor, tamanhoVetor);
+      controleLoop = 0;
       break;
 
     case 1:
       mostrarVetor(vetor, tamanhoVetor);
       break;
 
+    case 2:
+      mostrarVetorInvertido(vetor, tamanhoVetor);
+      break;
+
     default:
-      controleLoop = 0;
+      printf("Não entendi! \n");
       break;
     }
   }

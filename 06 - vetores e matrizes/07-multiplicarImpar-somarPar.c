@@ -15,32 +15,42 @@
 int main()
 {
   setlocale(LC_ALL, "portuguese");
-  int matrizA[2][5];
+  int matrizA[10];
   int matrizB[2][5];
+
+  for (int i = 0; i < 10; i++)
+  {
+    printf("Digite o valor da posição[%d]: ", i);
+    scanf("%d", &matrizA[i]);
+  }
+
+  int i = 0;
 
   for (int l = 0; l < 2; l++)
   {
     for (int c = 0; c < 5; c++)
     {
-      printf("Digite o valor da posição[%d][%d]: ", l, c);
-      scanf("%d", &matrizA[l][c]);
-
-      if (matrizA[l][c] % 2 != 0)
+      if (matrizA[i] % 2 != 0)
       {
-        matrizB[l][c] = matrizA[l][c] * 6;
+        matrizB[l][c] = matrizA[i] * 6;
       }
       else
       {
-        matrizB[l][c] = matrizA[l][c] + 6;
+        matrizB[l][c] = matrizA[i] + 6;
       }
+
+      i++;
     }
   }
+
+  i = 0;
 
   for (int l = 0; l < 2; l++)
   {
     for (int c = 0; c < 5; c++)
     {
-      printf("Matriz A: %d, Matriz B: %d \n", matrizA[l][c], matrizB[l][c]);
+      printf("Matriz A: %d, Matriz B: %d \n", matrizA[i], matrizB[l][c]);
+      i++;
     }
   }
 

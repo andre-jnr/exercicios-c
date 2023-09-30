@@ -10,7 +10,7 @@
 int main()
 {
   setlocale(LC_ALL, "portuguese");
-  int tamanhoVetor = 5;
+  int tamanhoVetor = 500;
 
   int vetor[tamanhoVetor];
 

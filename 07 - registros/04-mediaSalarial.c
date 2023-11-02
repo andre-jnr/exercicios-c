@@ -1,3 +1,13 @@
+/******************************************************************************
+
+4) Foi realizada uma pesquisa entre 500 habitantes de uma certa região. Dc cada
+habitante foram coletados os dados: idade, sexo, salário e número de filhos.
+Crie a estrutura de dados adequada para armazenar estas informações e faça uma
+função que armazene as informações digitadas pelo usuário na estrutura de dados
+criada. Faça também uma I função que calcula a média do salário dos habitantes.
+
+*******************************************************************************/
+
 #include <stdio.h>
 
 struct habitante

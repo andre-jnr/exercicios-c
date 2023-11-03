@@ -29,6 +29,7 @@ O ENDEREÇO é composto de:
 *******************************************************************************/
 
 #include <stdio.h>
+#include <string.h>
 
 struct endereco
 {
@@ -44,7 +45,7 @@ struct Cadastro
   char nome[30];
   struct endereco endereço;
   float salario;
-  int identidade;
+  char identidade[9];
   char cpf[12];
   char estadoCivil[30];
   char telefone[12];
@@ -63,11 +64,11 @@ void cadastrar(struct Cadastro pessoas[], int tamanho);
 struct Cadastro encontrarMaiorIdade(struct Cadastro pessoas[], int tamanho);
 struct ResultadoPesquisa buscarHomens(struct Cadastro pessoas[], int tamanho);
 struct ResultadoPesquisa encontrarPeloSalario(struct Cadastro pessoas[], int tamanho, float salarioAlvo);
-int encontrarPeloRg(struct Cadastro pessoas[], int tamanho, int rg);
+int encontrarPeloRg(struct Cadastro pessoas[], int tamanho, char rg[]);
 
 int main()
 {
-  int tamanho = 2, opcao;
+  int tamanho = 5, opcao;
   struct Cadastro pessoas[tamanho];
 
   cadastrar(pessoas, tamanho);
@@ -114,9 +115,9 @@ int main()
     }
     case 5:
     {
-      int rg;
+      char rg[9];
       printf("Digite o RG da pessoa desejada: ");
-      scanf("%i", &rg);
+      scanf("%s", rg);
       encontrarPeloRg(pessoas, tamanho, rg);
       break;
     }
@@ -174,7 +175,7 @@ void cadastrar(struct Cadastro pessoas[], int tamanho)
     scanf("%f", &pessoas[i].salario);
 
     printf("Identidade (RG): ");
-    scanf("%i", &pessoas[i].identidade);
+    scanf("%s", pessoas[i].identidade);
 
     printf("CPF: ");
     scanf("%s", pessoas[i].cpf);
@@ -247,29 +248,28 @@ struct ResultadoPesquisa encontrarPeloSalario(struct Cadastro pessoas[], int tam
   return resultado;
 }
 
-int encontrarPeloRg(struct Cadastro pessoas[], int tamanho, int rg)
+int encontrarPeloRg(struct Cadastro pessoas[], int tamanho, char rg[])
 {
   for (int i = 0; i < tamanho; i++)
   {
-    if (pessoas[i].identidade == rg)
-      for (int i = 0; i < tamanho; i++)
-      {
-        printf("Nome: %s \n", pessoas[i].nome);
-        printf("Rua: %s \n", pessoas[i].endereço.rua);
-        printf("Bairro: %s \n", pessoas[i].endereço.bairro);
-        printf("Cidade: %s \n", pessoas[i].endereço.cidade);
-        printf("Estado: %s \n", pessoas[i].endereço.estado);
-        printf("CEP: %s \n", pessoas[i].endereço.cep);
-        printf("Salario: R$%.2f \n", pessoas[i].salario);
-        printf("Identidade (RG): %i \n", pessoas[i].identidade);
-        printf("CPF: %s \n", pessoas[i].cpf);
-        printf("Estado civil: %s \n", pessoas[i].estadoCivil);
-        printf("Telefone: %s \n", pessoas[i].telefone);
-        printf("Idade: %i \n", pessoas[i].idade);
-        printf("Sexo [M/F]: %c \n", pessoas[i].sexo);
-        printf("\n----------------------------------------\n");
-        return 0;
-      }
+    if (strcmp(pessoas[i].identidade, rg) == 0)
+    {
+      printf("Nome: %s \n", pessoas[i].nome);
+      printf("Rua: %s \n", pessoas[i].endereço.rua);
+      printf("Bairro: %s \n", pessoas[i].endereço.bairro);
+      printf("Cidade: %s \n", pessoas[i].endereço.cidade);
+      printf("Estado: %s \n", pessoas[i].endereço.estado);
+      printf("CEP: %s \n", pessoas[i].endereço.cep);
+      printf("Salario: R$%.2f \n", pessoas[i].salario);
+      printf("Identidade (RG): %s \n", pessoas[i].identidade);
+      printf("CPF: %s \n", pessoas[i].cpf);
+      printf("Estado civil: %s \n", pessoas[i].estadoCivil);
+      printf("Telefone: %s \n", pessoas[i].telefone);
+      printf("Idade: %i \n", pessoas[i].idade);
+      printf("Sexo [M/F]: %c \n", pessoas[i].sexo);
+      printf("\n----------------------------------------\n");
+      return 0;
+    }
   }
   printf("Pessoa não encontrada! \n");
   printf("\n");

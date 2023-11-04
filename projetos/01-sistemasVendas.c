@@ -1,7 +1,6 @@
 /******************************************************************************
 
 Segue orientações para o PROJETO I - EDI.
-Escolher um dos dois projetos abaixo e implementar conforme
 CRITÉRIOS
 ESTRUTURA DE DADOS 1 - Projeto de Programação
 PROJETO 1
@@ -25,6 +24,8 @@ professor Israel Costa
 
 *******************************************************************************/
 #include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
 #include <string.h>
 
 struct Venda
@@ -50,9 +51,11 @@ int entradaProdutos(struct Produto estoque[], int qtdeCadastrada);
 int realizarVenda(struct Produto estoque[], int qtdeCadastrada, char produto[]);
 int pesquisarPorNome(struct Produto estoque[], int qtdeCadastrada, char produto[]);
 int listarVendas(struct Produto estoque[], int qtdeCadastrada, char produto[]);
+void VendasPorCliente(struct Produto estoque[], int qtdeCadastrada, char NameClient[]);
 
 int main()
 {
+  setlocale(LC_ALL, "Portuguese");
   struct Produto estoque[100];
   int qtdeProdutosCadastrados = 0;
   int opcao;
@@ -97,16 +100,29 @@ int main()
     {
       char produtoPesquisado[30];
       printf("### Encontrar vendas do produto ### \n");
-      printf("Que produto deseja visualizar os dados: ");
+      printf("Qual produto deseja visualizar os dados: ");
       scanf("%s", produtoPesquisado);
       listarVendas(estoque, qtdeProdutosCadastrados, produtoPesquisado);
       break;
     }
+    case 7:
+    {
+      char nomeCliente[30];
+      printf("### Encontrar vendas por cliente ### \n");
+      printf("Qual cliente você deseja visualizar as compras: ");
+      scanf("%s", nomeCliente);
+      VendasPorCliente(estoque, qtdeProdutosCadastrados, nomeCliente);
+      break;
+    }
+    case 8:
+      printf("Sistema encerrado! \n \n");
+      break;
     default:
+      printf("Opcao invalida! \n \n");
       break;
     }
 
-  } while (opcao != 7);
+  } while (opcao != 8);
 
   return 0;
 }
@@ -115,13 +131,14 @@ int menu()
 {
   int opcao;
   printf("O que deseja fazer? \n");
-  printf("[1] - Cadastrar produtos \n");
+  printf("[1] - Cadastrar produto \n");
   printf("[2] - Entrada de produto \n");
   printf("[3] - Venda \n");
   printf("[4] - Pesquisar por nome \n");
   printf("[5] - Listagem de produtos \n");
-  printf("[6] - Lista vendas do produto \n");
-  printf("[7] - Sair \n");
+  printf("[6] - Listar vendas do produto \n");
+  printf("[7] - Listar vendas por cliente \n");
+  printf("[8] - Sair \n");
   printf("-> ");
   scanf("%d", &opcao);
   return opcao;
@@ -131,7 +148,7 @@ int cadastrarProdutos(struct Produto estoque[], int qtdeCadastrada)
 {
   printf("Digite o nome do produto: ");
   scanf("%s", estoque[qtdeCadastrada].descricao);
-  printf("Digite o valor unitario do produto: ");
+  printf("Digite o valor unitario do produto: R$");
   scanf("%f", &estoque[qtdeCadastrada].valorUn);
   estoque[qtdeCadastrada].estoque = 0;
   estoque[qtdeCadastrada].qtdeVendas = 0;
@@ -186,22 +203,47 @@ int listarProdutos(struct Produto estoque[], int qtdeCadastrada)
 
 int listarVendas(struct Produto estoque[], int qtdeCadastrada, char produto[])
 {
-  for (int i = 0; i < qtdeCadastrada; i++)
+  if (qtdeCadastrada > 0)
   {
-    if (strcmp(estoque[i].descricao, produto) == 0)
+    int qtdeVendaProduto = 0;
+    for (int i = 0; i < qtdeCadastrada; i++)
     {
-      printf("TOTAL DE VENDAS: %i \n", estoque[i].qtdeVendas);
-      for (int j = 0; j < estoque[i].qtdeVendas; j++)
+      if (strcmp(estoque[i].descricao, produto) == 0)
       {
-        printf("%i venda: \n", j + 1);
-        printf("Cliente: %s \n", estoque[i].vendas[j].cliente);
-        printf("Valor unitario: R$%.2f \n", estoque[i].valorUn);
-        printf("Quantidade vendida: %i \n", estoque[i].vendas[j].qtdeVendida);
-        printf("Total pago: R$%.2f \n", estoque[i].vendas[j].totalPago);
-        printf("------------------------------------- \n");
+        if (estoque[i].qtdeVendas > 0)
+        {
+          qtdeVendaProduto++;
+          printf("TOTAL DE VENDAS: %i \n", estoque[i].qtdeVendas);
+          for (int j = 0; j < estoque[i].qtdeVendas; j++)
+          {
+            printf("%i venda: \n", j + 1);
+            printf("Cliente: %s \n", estoque[i].vendas[j].cliente);
+            printf("Valor unitario: R$%.2f \n", estoque[i].valorUn);
+            printf("Quantidade vendida: %i \n", estoque[i].vendas[j].qtdeVendida);
+            printf("Total pago: R$%.2f \n", estoque[i].vendas[j].totalPago);
+            printf("------------------------------------- \n");
+          }
+        }
+        else
+        {
+          printf("Não houve vendas desse produto! \n \n");
+          return 1;
+        }
       }
     }
+
+    if (qtdeVendaProduto == 0)
+    {
+      printf("Esse produto não teve vendas \n \n");
+      return 1;
+    }
   }
+  else
+  {
+    printf("Não há vendas \n \n");
+    return 1;
+  }
+
   return 0;
 }
 
@@ -218,7 +260,7 @@ int realizarVenda(struct Produto estoque[], int qtdeCadastrada, char produto[])
       scanf("%i", &qtdeVenda);
       printf("Valor unitario: R$%.2f \n", estoque[i].valorUn);
       estoque[i].vendas[estoque[i].qtdeVendas].totalPago = estoque[i].valorUn * qtdeVenda;
-      printf("Totol a ser pago: R$%.2f \n", estoque[i].vendas[estoque[i].qtdeVendas].totalPago);
+      printf("Total a ser pago: R$%.2f \n", estoque[i].vendas[estoque[i].qtdeVendas].totalPago);
       estoque[i].vendas[estoque[i].qtdeVendas].qtdeVendida = qtdeVenda;
       estoque[i].qtdeVendas++;
       estoque[i].estoque -= qtdeVenda;
@@ -237,6 +279,7 @@ int pesquisarPorNome(struct Produto estoque[], int qtdeCadastrada, char produto[
   {
     if (strcmp(estoque[i].descricao, produto) == 0)
     {
+
       printf("Codigo: %i \n", i);
       printf("Descricao: %s \n", estoque[i].descricao);
       printf("Quantidade em estoque: %i \n", estoque[i].estoque);
@@ -248,4 +291,37 @@ int pesquisarPorNome(struct Produto estoque[], int qtdeCadastrada, char produto[
 
   printf("Produto não encontrado :( \n");
   return 1;
+}
+
+void VendasPorCliente(struct Produto estoque[], int qtdeCadastrada, char NameClient[])
+{
+  // Pesquisar as compras do cliente
+  if (qtdeCadastrada > 0)
+  {
+    int qtdeVendaProduto = 0;
+    for (int i = 0; i < qtdeCadastrada; i++)
+    {
+      for (int j = 0; j < qtdeCadastrada; j++)
+      {
+        if (strcmp(NameClient, estoque[i].vendas[j].cliente) == 0)
+        {
+          qtdeVendaProduto++;
+          printf("%i venda: \n", j + 1);
+          printf("Cliente: %s \n", estoque[i].vendas[j].cliente);
+          printf("Valor unitario: R$%.2f \n", estoque[i].valorUn);
+          printf("Quantidade vendida: %i \n", estoque[i].vendas[j].qtdeVendida);
+          printf("Total pago: R$%.2f \n", estoque[i].vendas[j].totalPago);
+          printf("------------------------------------- \n");
+        }
+      }
+    }
+    if (qtdeVendaProduto == 0)
+    {
+      printf("Não houve venda para esse cliente \n \n");
+    }
+  }
+  else
+  {
+    printf("Nenhuma venda encontrada! \n \n");
+  }
 }

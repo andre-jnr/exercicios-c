@@ -6,7 +6,7 @@
 
 1. [Variaveis](https://github.com/andre-jnr/exercicios-c/blob/main/01%20-%20l%C3%B3gica%20e%20opera%C3%A7%C3%B5es%20aritm%C3%A9ticas/02-variaveis.c): Faça um algoritmo que tenha duas variáveis com o mesmo nome, mas uma completamente em maiúsculo e a outra completamente minúsculo com valores distintos e imprimas na tela.
 
-1. [Soma](https://github.com/andre-jnr/exercicios-c/blob/main/01%20-%20l%C3%B3gica%20e%20opera%C3%A7%C3%B5es%20aritm%C3%A9ticas/03-soma.c): Faça um programa que tenha n1 e n2, onde n1 recebe 5 e n2 8. Depois mostre a noma na dela.
+1. [Soma](https://github.com/andre-jnr/exercicios-c/blob/main/01%20-%20l%C3%B3gica%20e%20opera%C3%A7%C3%B5es%20aritm%C3%A9ticas/03-soma.c): Faça um programa que tenha `n1` e `n2`, onde `n1` recebe 5 e `n2` 8. Depois mostre a soma na tela.
 
 1. [Troca de valores](https://github.com/andre-jnr/exercicios-c/blob/main/01%20-%20l%C3%B3gica%20e%20opera%C3%A7%C3%B5es%20aritm%C3%A9ticas/04-troca_de_valores.c): Faça um algoritmo tem tenha a variável `a` e a variável `b`. Onde a variável `a` recebe 10 e a variável `b` recebe 20. Faça com que as variáveis troquem de valores, sem que as variáveis recebam os números diretamente.
 

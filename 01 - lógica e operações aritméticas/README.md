@@ -2,22 +2,24 @@
 
 ## Sintaxe básica
 
-Para usar comandos de entrada e saída, importamos a biblioteca stdio.h (standard input-output header / cabeçalho padrão de entrada/saída).
+Para usar comandos de entrada e saída, importamos a biblioteca `stdio.h` (standard input-output header / cabeçalho padrão de entrada/saída).
 
-Para usar as funções da biblioteca stdio.h, é necessário incluir o cabeçalho stdio.h no início do programa. Isso é feito usando a diretiva #include:
+Para usar as funções da biblioteca `stdio.h`, é necessário incluir o cabeçalho `stdio.h` no início do programa. Isso é feito usando a diretiva `#include`:
 
-c
+```c
 #include <stdio.h>
+```
 
 Assim podemos imprimir valores na tela.
 
-c
+```c
 #include <stdio.h>
 
 int main() {
 printf("Olá, mundo!\n");
 return 0;
 }
+```
 
 ## Variáveis
 
@@ -42,10 +44,11 @@ As variáveis podem ser usadas para armazenar uma ampla variedade de dados, incl
 
 Em C, são declaradas da seguinte forma:
 
-c
+```c
 int inteira;
 float reais;
 char caractere;
+```
 
 Aqui estão alguns exemplos de como as variáveis são usadas em linguagem de programação:
 

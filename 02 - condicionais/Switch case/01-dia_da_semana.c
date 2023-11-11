@@ -1,5 +1,5 @@
 /*
-  Leia o núemro que representa o dia da semana e imprima o nome do dia da semana.
+  Leia o número que representa o dia da semana e imprima o nome do dia da semana.
 */
 
 #include <stdio.h>

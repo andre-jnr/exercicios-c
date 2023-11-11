@@ -69,7 +69,7 @@
 
 1. [Duração do jogo](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Ifs%20e%20elses/07-duracao_xadrez.c): Leia a hora de início e a hora do fim de um jogo de xadrez (considere apenas horas inteiras, sem os minutos) e calcule a duração de jogo em horas, sabendo que o tempo máximo de duração do jogo é de 24 horas e que o jogo pode iniciar em um dia e terminar no dia seguinte.
 
-1. [Média alinhada](): Um professor deseja automatizar o processo de avaliação das notas de seus alunos. Ele pede a você para criar um programa em C que irá ler as notas das três provas de um aluno e determinar sua situação acadêmica com base em sua média. O professor adota as seguintes regras:
+1. [Média alinhada](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Ifs%20e%20elses/08-mediaAlinhada.c): Um professor deseja automatizar o processo de avaliação das notas de seus alunos. Ele pede a você para criar um programa em C que irá ler as notas das três provas de um aluno e determinar sua situação acadêmica com base em sua média. O professor adota as seguintes regras:
 
    - A média mínima para aprovação é 7.0.
    - Se a média estiver entre 4.0 e 6.9 (inclusive), o aluno estará em recuperação.
@@ -89,17 +89,17 @@
 
 ### Switch case
 
-1. [Dia da semana](): Leia o núemro que representa o dia da semana e imprima o nome do dia da semana
+1. [Dia da semana](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Switch%20case/01-dia_da_semana.c): Leia o número que representa o dia da semana e imprima o nome do dia da semana
 
-1. [Mês](): Leia o número que representa um mês do ano e imprima o nome do mês.
+1. [Mês](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Switch%20case/02-mes.c): Leia o número que representa um mês do ano e imprima o nome do mês.
 
-1. [Consolante ou vogal?](): Leia uma letra e imprima se ela é uma vogal ou uma consoante.
+1. [Consolante ou vogal?](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Switch%20case/03-consoante_ou_vogal.c): Leia uma letra e imprima se ela é uma vogal ou uma consoante.
 
-1. [Estação do ano](): Leia um número inteiro (1 a 12) e imprima a estação do ano correspondente.
+1. [Estação do ano](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Switch%20case/04-estacao.c): Leia um número inteiro (1 a 12) e imprima a estação do ano correspondente.
 
-1. [Dia útil](): Leia um número inteiro (1 a 7) e imprima se é dia útil ou fim de semana.
+1. [Dia útil](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Switch%20case/05-dia_util.c): Leia um número inteiro (1 a 7) e imprima se é dia útil ou fim de semana.
 
-1. [Grau correspondente](): Leia um número de 1 a 5 e imprima o grau correspondente.
+1. [Grau correspondente](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Switch%20case/06-grau_correspondente.c): Leia um número de 1 a 5 e imprima o grau correspondente.
 
    - 1 - Muito fraco
    - 2 - Fraco
@@ -107,13 +107,13 @@
    - 4 - Forte
    - 5 - Muito forte
 
-1. [Quantos dias tem o mês?](): Leia um número inteiro de 1 a 12 e imprima o número de dias no mês correspondente.
+1. [Quantos dias tem o mês?](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Switch%20case/07-dias_do_mes.c): Leia um número inteiro de 1 a 12 e imprima o número de dias no mês correspondente.
 
-1. [Maiúscula ou minúscula](): Leia uma letra e imprima se é uma letra maiúscula, minúscula ou um caractere não alfabético.
+1. [Maiúscula ou minúscula](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Switch%20case/08-maiuscula_minuscula.c): Leia uma letra e imprima se é uma letra maiúscula, minúscula ou um caractere não alfabético.
 
-1. [Trimestre](): Leia um número inteiro de 1 a 12 e imprima o número do trimestre ao qual esse mês pertence.
+1. [Trimestre](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Switch%20case/09-trimestre.c): Leia um número inteiro de 1 a 12 e imprima o número do trimestre ao qual esse mês pertence.
 
-1. [Senhor dos aneis](): No dia da estreia do filme "Senhor dos Anéis", uma grande emissora de TV realizou uma pesquisa logo após o encerramento do filme. Cada espectador respondeu a um questionário no qual constava sua idade e sua opinião em relação ao filme:
+1. [Senhor dos aneis](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Switch%20case/10-senhor_dos_aneis.c): No dia da estreia do filme "Senhor dos Anéis", uma grande emissora de TV realizou uma pesquisa logo após o encerramento do filme. Cada espectador respondeu a um questionário no qual constava sua idade e sua opinião em relação ao filme:
 
    - 3 - Excelente;
    - 2 - Bom;

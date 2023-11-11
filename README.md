@@ -50,3 +50,45 @@
    E) O seno da diferença do primeiro número pelo segundo;
 
    F) O módulo do primeiro número.
+
+## [Condicionais](https://github.com/andre-jnr/exercicios-c/tree/main/02%20-%20condicionais)
+
+### Ifs e Elses
+
+1. [Maior que 10?](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/x-eh-maior-que-10.c): Faça um programa que leia um valor e mostre a mensagem "É maior que 10!" se o valor lido for maior que 10, caso contrário, mostre "Não é maior que 10!".
+
+1. [Maior valor](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/maior.c): Faça um programa que leia dois valores e mostre qual o maior (considerando que nãos serão digitados o mesmo valores).
+
+1. [Média com situação](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/media-com-situa%C3%A7%C3%A3o.c): Leia duas notas, além de mostrar a média, mostre se o aluno foi aprovado (igual e acima de 6), ou reprovado.
+
+1. [Positivo ou negativo?](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/positivo-ou-negativo.c): Leia um valor e escreva se ele é positivo ou negativo (considerando 0 como positivo).
+
+1. [Ordem crescente](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/ordem_crescente.c): Leia dois valores (considere que não serão lidos valores iguais) e escreve-los e ordem crescente.
+
+1. [Preço de vendas](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/valor-ma%C3%A7a.c): As maças custam R$1,30 cada se forem compradas menos de uma dúzia, e R$1,00 se forem comprados pelos menos 12. Escreva um programa que leia o número de maças compradas, calcule e escreva o custo total da compra.
+
+1. [Duração do jogo](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/duracao_xadrez.c): Leia a hora de início e a hora do fim de um jogo de xadrez (considere apenas horas inteiras, sem os minutos) e calcule a duração de jogo em horas, sabendo que o tempo máximo de duração do jogo é de 24 horas e que o jogo pode iniciar em um dia e terminar no dia seguinte.
+
+1. [É um triangulo?](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/eh-um-triangulo.c): Faça um programa que leia os 3 lados de uma forma e identifique, se é ou não um triangulo. Use if alinhados para treinar.
+
+1. [Operações com idade](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/calculos_condicionais_idades.c): Leia a idade de 2 homens, em seguida leia a idade de 2 mulheres. Em seguida mostre:
+
+   - A soma do homem mais velho com a mulher mais nova.
+   - O produto do homem mais novo com a mulher mais velha
+   - A soma do homem mais velho com a mulher mais nova.
+   - O produto do homem mais novo com a mulher mais velha.
+     > Use ifs alinhados para treinar.
+
+1. [Senhor dos aneis](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/senhor-dos-aneis.c): No dia da estreia do filme "Senhor dos Anéis", uma grande emissora de TV realizou uma pesquisa logo após o encerramento do filme. Cada espectador respondeu a um questionário no qual constava sua idade e sua opinião em relação ao filme:
+
+   - 3 - Excelente;
+   - 2 - Bom;
+   - 1 - Regular;
+
+   Criar um algoritmo que receba a idade e opinião de vários espectadores, calcule e imprima:
+
+   - A média das idades das pessoas que responderam excelente;
+   - A quantidade de pessoas que responderam regular;
+   - A percentagem de pessoas que responderam bom entre todos os expectadores analisados.
+
+### Switch case

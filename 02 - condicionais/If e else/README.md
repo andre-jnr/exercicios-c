@@ -1,5 +1,28 @@
 # IF e Else
 
+## Operadores lógicos
+
+Em programação, operadores lógicos são usados para combinar expressões lógicas para formar expressões lógicas mais complexas. Eles podem ser usados para verificar condições e tomar decisões no código.
+
+Os operadores lógicos mais comuns são:
+
+- AND (`&&`): Retorna verdadeiro se ambos os operandos forem verdadeiros.
+- OR (`||`): Retorna verdadeiro se pelo menos um dos operandos for verdadeiro.
+- NOT (`!`): Retorna verdadeiro se o operando for falso.
+
+### Tabela com comparadores lógicos
+
+| símbolo | significado           |
+| ------- | --------------------- |
+| \>      | Maior que...          |
+| =>      | Maior ou igual a...   |
+| ==      | Igual a...            |
+| !=      | Diferente...          |
+| <       | Menor que...          |
+| =<      | Igual ou menor que... |
+
+## Sintaxe
+
 Em C, as instruções `if` e `else` são utilizadas para controlar o fluxo de execução do código. Elas permitem que o programador execute diferentes blocos de código dependendo do valor de uma expressão condicional.
 
 A sintaxe básica de uma instrução `if` é a seguinte:

@@ -96,7 +96,7 @@
    - O produto do homem mais novo com a mulher mais velha.
      > Use ifs alinhados para treinar.
 
-### Switch case
+### [Switch case](https://github.com/andre-jnr/exercicios-c/tree/main/02%20-%20condicionais/Switch%20case)
 
 1. [Dia da semana](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Switch%20case/01-dia_da_semana.c): Leia o número que representa o dia da semana e imprima o nome do dia da semana
 

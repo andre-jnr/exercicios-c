@@ -52,6 +52,12 @@ switch (variável) {
 
 Em resumo, a `variável` vai ser comparada em cada caso, e se for valor da `variável` for igual ao caso específicado, o bloco de código será executado.
 
+O comando `switch case` pode ser usado para implementar uma variedade de tarefas, como:
+
+- Implementar menus
+- Realizar testes de condição
+- Executar ações específicas para diferentes valores
+
 > Lembrando que o tipo primitivo dos casos tem que ser igual ao da variável.
 
 ## Exercícios

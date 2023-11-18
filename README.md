@@ -67,9 +67,18 @@
 
 1. [Preço de vendas](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Ifs%20e%20elses/06-valor_ma%C3%A7a.c): As maças custam R$1,30 cada se forem compradas menos de uma dúzia, e R$1,00 se forem comprados pelos menos 12. Escreva um programa que leia o número de maças compradas, calcule e escreva o custo total da compra.
 
-1. [Duração do jogo](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Ifs%20e%20elses/07-duracao_xadrez.c): Leia a hora de início e a hora do fim de um jogo de xadrez (considere apenas horas inteiras, sem os minutos) e calcule a duração de jogo em horas, sabendo que o tempo máximo de duração do jogo é de 24 horas e que o jogo pode iniciar em um dia e terminar no dia seguinte.
+1. [Faixa etária](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Ifs%20e%20elses/07-faixa-etaria.c): Desenvolva um algoritmo que leia a idade de uma pessoa e informe a sua faixa etária:
 
-1. [Média alinhada](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Ifs%20e%20elses/08-mediaAlinhada.c): Um professor deseja automatizar o processo de avaliação das notas de seus alunos. Ele pede a você para criar um programa em C que irá ler as notas das três provas de um aluno e determinar sua situação acadêmica com base em sua média. O professor adota as seguintes regras:
+   - Bebê: entre 0 e 2 anos.
+   - Criança: entre 3 e 11 anos.
+   - Adolescente: entre 12 e 17 anos.
+   - Jovem: entre 18 e 30 anos.
+   - Adulto: entre 31 e 59 anos.
+   - Idoso: acima de 60 anos.
+
+1. [Duração do jogo](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Ifs%20e%20elses/08-duracao_xadrez.c): Leia a hora de início e a hora do fim de um jogo de xadrez (considere apenas horas inteiras, sem os minutos) e calcule a duração de jogo em horas, sabendo que o tempo máximo de duração do jogo é de 24 horas e que o jogo pode iniciar em um dia e terminar no dia seguinte.
+
+1. [Média alinhada](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Ifs%20e%20elses/09-mediaAlinhada.c): Um professor deseja automatizar o processo de avaliação das notas de seus alunos. Ele pede a você para criar um programa em C que irá ler as notas das três provas de um aluno e determinar sua situação acadêmica com base em sua média. O professor adota as seguintes regras:
 
    - A média mínima para aprovação é 7.0.
    - Se a média estiver entre 4.0 e 6.9 (inclusive), o aluno estará em recuperação.
@@ -77,9 +86,9 @@
 
    Você deve criar um programa que solicita ao usuário que insira as notas das três provas, calcula a média das notas e, em seguida, imprime a situação acadêmica do aluno com base nas regras acima.
 
-1. [É um triangulo?](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Ifs%20e%20elses/09-triangulo.c): Faça um programa que leia os 3 lados de uma forma e identifique, se é ou não um triangulo. Use if alinhados para treinar.
+1. [É um triangulo?](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Ifs%20e%20elses/10-triangulo.c): Faça um programa que leia os 3 lados de uma forma e identifique, se é ou não um triangulo. Use if alinhados para treinar.
 
-1. [Operações com idade](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Ifs%20e%20elses/10-operaceos_com_idades.c): Leia a idade de 2 homens, em seguida leia a idade de 2 mulheres. Em seguida mostre:
+1. [Operações com idade](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Ifs%20e%20elses/11-operaceos_com_idades.c): Leia a idade de 2 homens, em seguida leia a idade de 2 mulheres. Em seguida mostre:
 
    - A soma do homem mais velho com a mulher mais nova.
    - O produto do homem mais novo com a mulher mais velha
@@ -113,7 +122,17 @@
 
 1. [Trimestre](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Switch%20case/09-trimestre.c): Leia um número inteiro de 1 a 12 e imprima o número do trimestre ao qual esse mês pertence.
 
-1. [Senhor dos aneis](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Switch%20case/10-senhor_dos_aneis.c): No dia da estreia do filme "Senhor dos Anéis", uma grande emissora de TV realizou uma pesquisa logo após o encerramento do filme. Cada espectador respondeu a um questionário no qual constava sua idade e sua opinião em relação ao filme:
+1. [Menu com taxas populacionais](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Switch%20case/10-taxas_populacionais.c): A taxa de natalidade e a taxa de mortalidade são indicadores estatísticos de fundamental importância por ajudar a compreender aquilo que os especialistas chamas de dinâmica populacional e a entender sua relação com variáveis que influenciam o desenvolvimento, como qualidade de vida, migrações, fatores socioeconômicos e localização. Sabendo disso, crie um programa que calcule os dois indicadores utilizando o comando `switch`.
+
+   ```
+   taxa de natalidade =  (número de crianças nascidas x 1000) / número de habitantes
+   ```
+
+   ```
+   taxa de mortalidade = (número de óbitos x 1000) / número de habitantes
+   ```
+
+1. [Senhor dos aneis](https://github.com/andre-jnr/exercicios-c/blob/main/02%20-%20condicionais/Switch%20case/11-senhor_dos_aneis.c): No dia da estreia do filme "Senhor dos Anéis", uma grande emissora de TV realizou uma pesquisa logo após o encerramento do filme. Cada espectador respondeu a um questionário no qual constava sua idade e sua opinião em relação ao filme:
 
    - 3 - Excelente;
    - 2 - Bom;

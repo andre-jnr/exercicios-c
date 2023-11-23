@@ -16,8 +16,8 @@ Assim podemos imprimir valores na tela.
 #include <stdio.h>
 
 int main() {
-printf("Olá, mundo!\n");
-return 0;
+    printf("Olá, mundo!\n");
+    return 0;
 }
 ```
 

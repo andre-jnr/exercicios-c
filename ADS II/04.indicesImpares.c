@@ -1,4 +1,4 @@
-/*
+/* VETOR
     Crie um vetor de 10 entradas do tipo
     inteiro. Armazene os valores pares em
     em todos o vetor. Apresente o vetor em

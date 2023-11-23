@@ -1,6 +1,8 @@
 {
   "files.associations": {
-    "stdio.h": "c"
+    "stdio.h": "c",
+    "06.C": "cpp",
+    "06-somaColunaAnteriores.C": "cpp"
   },
   "C_Cpp.errorSquiggles": "enabled"
 }

@@ -1,6 +1,6 @@
 # Lógica e programação estruturada
 
-## [Lógica e operações aritmética](/01-logica_e_operacoes_aritmeticas)
+## [Lógica e operações aritmética](/01-logica_e_operacoes_aritmeticas/README.md)
 
 1. [Olá mundo](/01-logica_e_operacoes_aritmeticas/01-ola_mundo.c): Crie um programa que imprima "Olá mundo" na tela.
 
@@ -51,9 +51,9 @@
 
    F) O módulo do primeiro número.
 
-## [Condicionais](/02-condicionais)
+## [Condicionais](https://github.com/andre-jnr/exercicios-c/tree/main/02-condicionais)
 
-### [If e Else](/02-condicionais/If_e_else)
+### [If e Else](/02-condicionais/If_e_else/README.md)
 
 1. [Maior que 10?](/02-condicionais/If_e_else/01-maiorQue10.c): Faça um programa que leia um valor e mostre a mensagem "É maior que 10!" se o valor lido for maior que 10, caso contrário, mostre "Não é maior que 10!".
 
@@ -96,7 +96,7 @@
    - O produto do homem mais novo com a mulher mais velha.
      > Use ifs alinhados para treinar.
 
-### [Switch case](/02-condicionais/switch_case)
+### [Switch case](/02-condicionais/switch_case/README.md)
 
 1. [Dia da semana](/02-condicionais/switch_case/01-dia_da_semana.c): Leia o número que representa o dia da semana e imprima o nome do dia da semana
 

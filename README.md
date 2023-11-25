@@ -1,3 +1,6 @@
+- [Acesse o repositório aqui](https://github.com/andre-jnr/exercicios-c)
+- [Acesse o site aqui](https://andre-jnr.github.io/exercicios-c/)
+
 # Lógica e programação estruturada
 
 ## [Lógica e operações aritmética](/01-logica_e_operacoes_aritmeticas/README.md)
@@ -51,7 +54,7 @@
 
    F) O módulo do primeiro número.
 
-## [Condicionais](https://github.com/andre-jnr/exercicios-c/tree/main/02-condicionais)
+## [Condicionais](02-condicionais/README.md)
 
 ### [If e Else](/02-condicionais/If_e_else/README.md)
 
